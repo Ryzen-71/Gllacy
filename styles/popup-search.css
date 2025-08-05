@@ -1,0 +1,28 @@
+.navigation-link-search.is-visible {
+  background-color: var(--background-color-special-bright);
+}
+
+.navigation-item:has(.is-visible) .navigation-link-search::before{
+  background-color: #ffffff;
+}
+
+.popover-search {
+    position: absolute;
+    display: none;
+    width: 356px;
+    left: -325px;
+    top: 40px;
+    min-height: 96px;
+    padding: 24px 16px;
+    background-color: var( --background-color-extra-light);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.field-input[type="search"] {
+ width: 324px;
+}
+
+.is-visible {
+  display: block;
+}
