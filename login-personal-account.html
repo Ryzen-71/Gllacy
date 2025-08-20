@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gllacy|Попап входа </title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/login-personal-account.css">
+</head>
+
+<body class="bg-slide-1">
+  <div class="wrap">
+    <header class="page-header">
+      <a class="logo" href="/">
+        <img src="./images/svg/logo-gllacy.svg" width="137" height="56" alt="Логотип Gllacy">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-catalog" href="#">
+              Каталог
+            </a>
+            <ul class="submenu">
+              <li class="submenu-title">Новинки</li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="/catalog.html">Сливочное</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="">
+              О компании
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-phone" href="tel:78005558628">
+              +7 800 555-86-28
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-search" href="">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-login is-active" href="">
+              Вход
+            </a>
+            <div class="modal modal-personal-account">
+              <section class="modal-content">
+                <h3 class="modal-title heaiding-3">Личный кабинет</h3>
+                <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                  <p class="field-group">
+                    <label class="visually-hidden" for="auth-Email">Email</label>
+                    <input class="auth-form-field field" type="Email" id="auth-Email" name="auth-Email"
+                      placeholder="email@example.com" required>
+                  </p>
+                  <p class="field-group">
+                    <label class="visually-hidden" for="auth-password">Пароль</label>
+                    <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                      placeholder="••••••" required>
+                  </p>
+                  <p class="field-group auth-form-user-options">
+                    <button class="button auth-form-button" type="submit">Войти</button>
+                    <a class="auth-form-recovery " href="#">Забыли пароль?</a>
+                    <a class="auth-form-recovery " href="#">Регистрация</a>
+                  </p>
+                </form>
+              </section>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-basket" href="">
+              2 товара
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="gallery">
+        <div class="gallery-wrap">
+          <h1 class="visually-hidden">Интернет магазин Gllacy</h1>
+          <div class="gallery-promo">
+            <h1 class="gallery-title heaiding-1">Нежный пломбир <br>
+              с клубничным джемом</h1>
+            <p class="gallery-description paragraph-normal-1">
+              Натуральное мороженое из свежих сливок <br>
+              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+            </p>
+            <button class="button gallery-button">Button</button>
+          </div>
+          <div class="slider">
+            <div class="slide slide-is-current">
+              <div class="slide-wrap-is-current">
+                <img src="images/sliders/slide-1.png" width="327" height="507" alt="Мороженное">
+                <div class="slider-controls">
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Предыдущее мороженое</span>
+                  </button>
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Следующее мороженое</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-wrap">
+                <img src="images/sliders/slide-2.png" width="66" height="150" alt="Мороженное">
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-wrap">
+                <img src="images/sliders/slide-3.png" width="66" height="150" alt="Мороженное">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-footer">
+          <ul class="banner-pagination-list">
+            <li class="banner-pagination-item">
+              <button class="banner-pagination-button banner-pagination-button-is-active" type="button"></button>
+            </li>
+            <li class="banner-pagination-item">
+              <button class="banner-pagination-button" type="button"></button>
+            </li>
+            <li class="banner-pagination-item">
+              <button class="banner-pagination-button" type="button"></button>
+            </li>
+          </ul>
+          <ul class="soc1al-list">
+            <li class="soc1al-item">
+              <a class="soc1al-link soc1al-link--telegram" href="https://t.me/htmlacademy" target="_blank">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="soc1al-item">
+              <a class="soc1al-link soc1al-link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">Vkontakte </span>
+              </a>
+            </li>
+            <li class="soc1al-item">
+              <a class="soc1al-link soc1al-link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

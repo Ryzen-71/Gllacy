@@ -1,0 +1,32 @@
+/* Хедер / Попап корзины без товаров */
+
+.navigation-link.is-active {
+  color: var(--text-color-extra-light);
+  background-color: var(--background-color-special-bright);
+}
+
+.navigation-link.navigation-link-basket:before {
+  background-color: var(--text-color-extra-light);
+}
+
+.popover.popover-basket {
+  position: absolute;
+  left: -137px;
+  top: 40px;
+  max-width: 441px;
+  min-height: 382px;
+  z-index: 1;
+}
+
+.popover-content {
+  width: 288px;
+  padding-block: 48px;
+  background-color: var(--text-color-extra-light);
+  box-shadow: var(--box-shadow-large);
+  border-radius: 4px;
+}
+
+.popover-basket .popover-title {
+  margin: 0;
+  text-align: center;
+}
